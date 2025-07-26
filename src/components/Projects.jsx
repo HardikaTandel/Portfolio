@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import ToolsAndTech from "./ToolsAndTech";
+import Experience from "./Experience";
 import project1 from "../assets/project1.png";
 import project2 from "../assets/project2.png"
 import { motion, useInView } from "framer-motion";
@@ -83,12 +84,24 @@ const Projects = () => {
           ))}
         </div>
       </div>
+      
+      {/* Experience Section */}
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false, amount: 0.2 }}
-        transition={{ delay: 0.7, duration: 0.5 }}
+        transition={{ delay: 0.6, duration: 0.5 }}
+      >
+        <Experience />
+      </motion.div>
+      
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false, amount: 0.2 }}
+        transition={{ delay: 0.8, duration: 0.5 }}
       >
         <ToolsAndTech />
       </motion.div>
