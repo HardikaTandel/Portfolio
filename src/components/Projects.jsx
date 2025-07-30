@@ -4,6 +4,7 @@ import Experience from "./Experience";
 import project1 from "../assets/project1.png";
 import project2 from "../assets/project2.png"
 import { motion, useInView } from "framer-motion";
+import { span } from "motion/react-client";
 
 const Projects = () => {
   const ref = useRef(null);
@@ -16,8 +17,13 @@ const Projects = () => {
     {
       id: 1,
       title: "Personal daily news app",
-      description:
-        "Daily News App delivers real-time updates across genres like Politics, Tech, and Sports. With has the feature of reading the news headlines out loud, users can listen to news hands-free while multitasking. Also direct to main page if what detailed information.",
+      description:(
+      <span>
+        <span>A real-time news app delivering updates across categories like Politics, Tech, and Sports. It features text-to-speech for hands-free listening and direct navigation to full articles for detailed reading.</span>
+        <span className="font-bold"> Currently improving the UI, integrating a backend to save favorite news, and implementing Named Entity Recognition (NER) for smarter content tagging and recommendations.</span>
+        </span>
+
+      ),
       image: project1,
       link: "https://dailynewapp.netlify.app/",
     },
@@ -25,7 +31,7 @@ const Projects = () => {
       id: 2,
       title: "AI travel planner",
       description:
-        "A smart, AI-powered travel planning web app that generates personalized itineraries based on user preferences like destination, budget, and trip duration. Built with React, Firebase, and the Google Places API, it allows users to view day-wise plans, explore places with photos, and save trips to their account via Google login.",
+        "A smart web app that creates personalized travel itineraries based on destination, budget, and duration. Built with React, Firebase, and Google Places API, it lets users view day-wise plans, explore places with photos, and save trips via Google login. Features include PDF itinerary download and emailing the plan to the user for easy access.",
       image: project2,
       link: "https://ai-travel-planner-pi.vercel.app/",
     },
