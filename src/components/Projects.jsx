@@ -16,8 +16,8 @@ const Projects = () => {
       title: "Personal daily news app",
       description:(
       <span>
-        <span>A real-time news app delivering updates across categories like Politics, Tech, and Sports. It features text-to-speech for hands-free listening and direct navigation to full articles for detailed reading.</span>
-         Currently improving the UI, integrating a backend to save favorite news, and implementing Named Entity Recognition (NER) for smarter content tagging and recommendations.</span>
+        A real-time news app delivering updates across categories like Politics, Tech, and Sports. It features text-to-speech for hands-free listening and direct navigation to full articles for detailed reading.
+         Currently improved the UI, integrating a backend to save favorite news, and implementing Named Entity Recognition (NER) for smarter content tagging and recommendations.Now working on the accuracy of the NER.</span>
        
 
       ),
