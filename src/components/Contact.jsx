@@ -7,7 +7,7 @@ const Contact = () => {
   const ref =useRef(null);
 
   return (
-    <div  id='contact' className='container mx-auto text-center mb-10'>
+    <div  id='contact' className='container mx-auto text-center mb-10 text-white'>
       <motion.h2 
       ref={ref}
       initial={{ opacity: 0, y: 100 }}

@@ -68,10 +68,10 @@ const Navbar = () => {
             onClick={() => {
               setMenu((prev) => !prev);
             }}
-            className="bg-white text-black fixed z-10 w-2/3 h-full "
+            className={`fixed z-40 h-full ${menu ? "w-2/3 bg-white text-black pointer-events-auto" : "w-0 bg-transparent text-transparent pointer-events-none"}`}
           >
             <div className="px-7 py-6">
-              {menu ? <IoClose size={30} /> : <IoMenu size={30} />}
+              {menu ? <IoClose size={30} /> : <IoMenu size={30} className="text-white" />}
             </div>
 
             {menu && (
@@ -82,7 +82,7 @@ const Navbar = () => {
                       key={id}
                       className="hover:text-purple-500 cursor-pointer"
                     >
-                      <Link to={to} smooth={true} duration={500} offset={-70}>
+                      <Link to={to} smooth={true} duration={500} offset={-70} onClick={() => setMenu(false)}>
                         {text}
                       </Link>
                     </li>
@@ -92,7 +92,7 @@ const Navbar = () => {
                   href="/Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="md:text-base lg:text-lg bg-purple-500 hover:bg-purple-300 text-white px-4 py-2 rounded-full"
+                  className="md:text-base lg:text-lg bg-purple-500 hover:bg-purple-300 text-white px-4 py-2 rounded-full mt-6"
                 >
                   View Resume
                 </a>

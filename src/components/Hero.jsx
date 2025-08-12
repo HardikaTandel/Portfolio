@@ -44,7 +44,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 2, duration: 0.5 }}
-          className="text-gray-400 text-lg mb-8 mt-2 "
+          className="text-white sm:text-slate-300 text-base sm:text-lg leading-relaxed mb-8 mt-2 "
         ><p> Hi, I’m a B.Tech IT student at Bharati Vidyapeeth University, Pune,
           passionate about full-stack web development — with a special love for
           frontend technologies. I enjoy building clean, responsive, and

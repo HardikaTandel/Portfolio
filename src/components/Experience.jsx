@@ -1,17 +1,15 @@
-import React, { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import React from "react";
+import { motion } from "framer-motion";
 
 const Experience = () => {
-  const ref = useRef(null);
-  const inView = useInView(ref, { triggerOnce: false });
 
   const experiences = [
     {
       id: 1,
-      title: "SDE Intern",
+      title: "Intern",
       company: "CDAC - Pune",
       duration: "May 2025 - Present",
-      description: "Independently designed and developed the Calendar module for CDAC - Pune’s management app, handling both UI and backend while others worked on the other modules. Built intuitive scheduling and event features, integrating seamlessly with other modules. Used Figma, Tailwind CSS, Node.js, and MongoDB to deliver a secure, high-performance solution that improved workflow efficiency across the organization.",
+      description: "Independently designed and developed the Calendar module in the  management app, handling both UI and backend while others worked on the other modules. Built intuitive scheduling and event features, integrating seamlessly with other modules. Used Figma, Tailwind CSS, Node.js, and MongoDB to deliver a secure, high-performance solution that improved workflow efficiency across the organization.",
       technologies: ["React", "MongoDB", "HTML5", "Git","Node.js","Express.js","Tailwind CSS","Figma"]
     },
  
@@ -21,7 +19,6 @@ const Experience = () => {
   return (
     <div className="py-8">
       <motion.h3
-        ref={ref}
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false, amount: 0.2 }}
@@ -33,7 +30,6 @@ const Experience = () => {
       <div className={`mx-5 ${experiences.length === 1 ? "flex justify-center" : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"}`}>
         {experiences.map((experience) => (
           <motion.div
-            ref={ref}
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.2 }}
@@ -53,7 +49,7 @@ const Experience = () => {
               <h5 className="text-purple-300 text-lg font-medium mb-3">
                 {experience.company}
               </h5>
-              <p className="text-slate-400 mb-4 leading-relaxed">
+              <p className="text-white sm:text-slate-300 mb-4 leading-relaxed">
                 {experience.description}
               </p>
               <div className="flex flex-wrap gap-2">

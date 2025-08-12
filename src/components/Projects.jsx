@@ -1,14 +1,11 @@
-import React, { useRef } from "react";
+import React from "react";
 import ToolsAndTech from "./ToolsAndTech";
 import Experience from "./Experience";
 import project1 from "../assets/project1.png";
 import project2 from "../assets/project2.png"
-import { motion, useInView } from "framer-motion";
-import { span } from "motion/react-client";
+import { motion } from "framer-motion";
 
 const Projects = () => {
-  const ref = useRef(null);
-  const inView = useInView(ref, { triggerOnce: false });
   const openProjectSite = (link) => {
     window.open(link, "_blank");
   };
@@ -42,7 +39,6 @@ const Projects = () => {
     <div  id='projects' className="py-3">
       <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <motion.h2
-          ref={ref}
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.2 }}
@@ -52,7 +48,6 @@ const Projects = () => {
           My Work
         </motion.h2>
         <motion.p
-          ref={ref}
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.2 }}
@@ -63,7 +58,6 @@ const Projects = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mx-5">
           {projects.map((project) => (
             <motion.div
-              ref={ref}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false, amount: 0.2 }}
@@ -76,7 +70,7 @@ const Projects = () => {
                 <h3 className="text-white text-xl font-semibold mb-3">
                   {project.title}
                 </h3>
-                <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-4">{project.description}</p>
+                <p className="text-white sm:text-slate-300 text-base sm:text-lg leading-relaxed mb-4">{project.description}</p>
           
                 <button className="border-2 border-purple-500 text-purple-400 hover:text-white hover:bg-purple-500 px-4 py-2 rounded-full transition-colors duration-200 font-medium"
                   onClick={() => openProjectSite(project.link)}>View Project
