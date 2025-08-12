@@ -83,7 +83,6 @@ const Projects = () => {
       
       {/* Experience Section */}
       <motion.div
-        ref={ref}
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false, amount: 0.2 }}
@@ -93,7 +92,6 @@ const Projects = () => {
       </motion.div>
       
       <motion.div
-        ref={ref}
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false, amount: 0.2 }}
