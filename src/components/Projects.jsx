@@ -20,12 +20,12 @@ const Projects = () => {
       description:(
       <span>
         <span>A real-time news app delivering updates across categories like Politics, Tech, and Sports. It features text-to-speech for hands-free listening and direct navigation to full articles for detailed reading.</span>
-        <span className="font-bold"> Currently improving the UI, integrating a backend to save favorite news, and implementing Named Entity Recognition (NER) for smarter content tagging and recommendations.</span>
-        </span>
+         Currently improving the UI, integrating a backend to save favorite news, and implementing Named Entity Recognition (NER) for smarter content tagging and recommendations.</span>
+       
 
       ),
       image: project1,
-      link: "https://dailynewapp.netlify.app/",
+      link: "https://github.com/HardikaTandel/news-app",
     },
     {
       id: 2,
@@ -58,11 +58,7 @@ const Projects = () => {
           viewport={{ once: false, amount: 0.2 }}
           transition={{ delay: 0.5, duration: 0.5 }}
           className="mb-10 text-gray-400 text-center  mt-6"
-        >{/** 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
-          reprehenderit. Eum repudiandae inventore aperiam quae dolorum placeat
-          autem soluta et! Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Eius, delectus!*/}
+        >
         </motion.p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mx-5">
           {projects.map((project) => (
@@ -80,10 +76,10 @@ const Projects = () => {
                 <h3 className="text-white text-xl font-semibold mb-3">
                   {project.title}
                 </h3>
-                <p className="text-slate-400 mb-4">{project.description}</p>
+                <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-4">{project.description}</p>
           
-                <button className="border-2 border-purple-700 text-purple-700 px-4 py-1 rounded-full hover:text-white hover:bg-purple-700 transition"
-                  onClick={() => openProjectSite(project.link)}>View Site
+                <button className="border-2 border-purple-500 text-purple-400 hover:text-white hover:bg-purple-500 px-4 py-2 rounded-full transition-colors duration-200 font-medium"
+                  onClick={() => openProjectSite(project.link)}>View Project
                 </button>
               </div>
             </motion.div>
