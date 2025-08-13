@@ -38,7 +38,7 @@ const Contact = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false, amount: 0.2 }}
             transition={{ delay: 0.2, duration: 0.5 }} className='flex items-center space-x-4'>
-              <div className='bg-purple-500 p-4 rounded-full'>
+              <div className='bg-purple-600 sm:bg-purple-500 p-4 rounded-full shadow-lg border border-purple-400'>
                 <FaPhone className='text-white w-6 h-6' />
               </div>
               <p className='text-lg font-medium text-white'>+91-9594376466</p>
@@ -51,7 +51,7 @@ const Contact = () => {
                  viewport={{ once: false, amount: 0.2 }}
                  transition={{ delay: 0.4, duration: 0.5 }} 
             className='flex items-center space-x-4'>
-              <div className='bg-purple-500 p-4 rounded-full'>
+              <div className='bg-purple-600 sm:bg-purple-500 p-4 rounded-full shadow-lg border border-purple-400'>
                 <FaEnvelope className='text-white w-6 h-6' />
               </div>
               <p className='text-lg font-medium text-white'>tandelhardika@gmail.com</p>
@@ -64,7 +64,7 @@ const Contact = () => {
                  viewport={{ once: false, amount: 0.2 }}
                  transition={{ delay: 0.6, duration: 0.5 }} 
             className='flex items-center space-x-4'>
-              <div className='bg-purple-500 p-4 rounded-full'>
+              <div className='bg-purple-600 sm:bg-purple-500 p-4 rounded-full shadow-lg border border-purple-400'>
                 <a 
                   href="https://www.linkedin.com/in/hardika-tandel-8a83a924a/" 
                   target="_blank" 

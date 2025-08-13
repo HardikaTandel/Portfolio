@@ -59,7 +59,7 @@ const scrollVarients2 ={
                 animate="animate"
                 className='whitespace-nowrap flex space-x-10'>
                      {duplicatedTechTools.map((techtool, index)=>(
-                      <div key={index} className='text-lg bg-gray-700 sm:bg-gray-800 px-6 py-3 inline-block rounded-4xl shadow-lg border border-gray-600'>
+                      <div key={index} className='text-lg bg-gray-600 sm:bg-gray-700 md:bg-gray-800 px-6 py-3 inline-block rounded-4xl shadow-xl border-2 border-gray-500'>
                         {techtool}
                       </div>
                      ))}
@@ -71,7 +71,7 @@ const scrollVarients2 ={
                 animate="animate"className='whitespace-nowrap flex space-x-10'>
                 {duplicatedTechTools.map((techtool, index)=>(
                       <div key={index}
-                      className='text-lg bg-gray-700 sm:bg-gray-800 px-6 py-3 inline-block rounded-4xl shadow-lg border border-gray-600'>
+                      className='text-lg bg-gray-600 sm:bg-gray-700 md:bg-gray-800 px-6 py-3 inline-block rounded-4xl shadow-xl border-2 border-gray-500'>
                         {techtool}
                       </div>
                      ))}

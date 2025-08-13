@@ -6,3 +6,24 @@ body{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+/* Mobile-specific button visibility */
+@media (max-width: 768px) {
+    button, a[href] {
+        background-color: var(--tw-bg-opacity, 1) !important;
+        color: var(--tw-text-opacity, 1) !important;
+        border-color: var(--tw-border-opacity, 1) !important;
+    }
+    
+    /* Ensure project buttons are visible */
+    button.border-purple-500 {
+        background-color: rgb(147 51 234) !important;
+        color: white !important;
+    }
+    
+    /* Ensure resume buttons are visible */
+    a.bg-purple-500, a.bg-purple-600 {
+        background-color: rgb(147 51 234) !important;
+        color: white !important;
+    }
+}

@@ -72,7 +72,7 @@ const Projects = () => {
                 </h3>
                 <p className="text-white sm:text-slate-300 text-base sm:text-lg leading-relaxed mb-4">{project.description}</p>
           
-                <button className="border-2 border-purple-500 bg-purple-500/20 sm:bg-transparent text-purple-400 hover:text-white hover:bg-purple-500 active:bg-purple-600 px-4 py-2 rounded-full transition-colors duration-200 font-medium shadow-lg"
+                <button className="border-2 border-purple-500 bg-purple-500 text-white hover:bg-purple-600 active:bg-purple-700 px-4 py-2 rounded-full transition-colors duration-200 font-medium shadow-lg mobile:bg-purple-500 mobile:text-white"
                   onClick={() => openProjectSite(project.link)}>View Project
                 </button>
               </div>
