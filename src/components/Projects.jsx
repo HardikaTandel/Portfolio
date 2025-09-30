@@ -3,6 +3,7 @@ import ToolsAndTech from "./ToolsAndTech";
 import Experience from "./Experience";
 import project1 from "../assets/project1.png";
 import project2 from "../assets/project2.png"
+import project3 from "../assets/project3.png";
 import { motion } from "framer-motion";
 
 const Projects = () => {
@@ -13,25 +14,30 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Personal daily news app",
+      title: "NewsHunt",
       description:(
       <span>
         A real-time news app delivering updates across categories like Politics, Tech, and Sports. It features text-to-speech for hands-free listening and direct navigation to full articles for detailed reading.
-         Currently improved the UI, integrating a backend to save favorite news, and implementing Named Entity Recognition (NER) for smarter content tagging and recommendations.Now working on the accuracy of the NER.</span>
-       
-
+         Improved the UI, integrating a backend to save favorite news, and implementing Named Entity Recognition (NER) for smarter content tagging and recommendations.Now working on the accuracy of the NER.</span>
       ),
       image: project1,
       link: "https://github.com/HardikaTandel/news-app",
     },
     {
       id: 2,
-      title: "AI travel planner",
+      title: "TripCraft",
       description:
         "A smart web app that creates personalized travel itineraries based on destination, budget, and duration. Built with React, Firebase, and Google Places API, it lets users view day-wise plans, explore places with photos, and save trips via Google login. Features include PDF itinerary download and emailing the plan to the user for easy access.",
       image: project2,
       link: "https://ai-travel-planner-pi.vercel.app/",
     },
+    {
+      id:3,
+      title: "Weather App",
+      description :"Engineered an interactive Weather Dashboard using ReactJS and the OpenWeather API, delivering real-time weather insights and a 5-day forecast with sleek, dynamic visuals. Enhanced user experience by integrating city search, geolocation-based detection, and condition-based weather icons for clarity. Designed a modern, responsive UI with ReactJS and CSS, transforming complex weather data into an intuitive and visually engaging experience.",
+    image: project3,
+    link: "https://forecastpage.netlify.app/"
+    }
   
   ];
 

@@ -8,7 +8,7 @@ const Experience = () => {
       id: 1,
       title: "Intern",
       company: "CDAC - Pune",
-      duration: "May 2025 - Present",
+      duration: "April 2025 - Sept 2025",
       description: "Independently designed and developed the Calendar module in the  management app, handling both UI and backend while others worked on the other modules. Built intuitive scheduling and event features, integrating seamlessly with other modules. Used Figma, Tailwind CSS, Node.js, and MongoDB to deliver a secure, high-performance solution that improved workflow efficiency across the organization.",
       technologies: ["React", "MongoDB", "HTML5", "Git","Node.js","Express.js","Tailwind CSS","Figma"]
     },
