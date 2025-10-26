@@ -17,8 +17,7 @@ const Projects = () => {
       title: "NewsHunt",
       description:(
       <span>
-        A real-time news app delivering updates across categories like Politics, Tech, and Sports. It features text-to-speech for hands-free listening and direct navigation to full articles for detailed reading.
-         Improved the UI, integrating a backend to save favorite news, and implementing Named Entity Recognition (NER) for smarter content tagging and recommendations.Now working on the accuracy of the NER.</span>
+      Developed a news app delivering category-wise updates (Politics, Tech, Sports) with text-to-speech and full-article navigation. Enhanced UI, added backend for saving favorites, and implemented NER for intelligent content tagging and recommendations. Currently improving NER accuracy.</span>
       ),
       image: project1,
       link: "https://github.com/HardikaTandel/news-app",
@@ -27,14 +26,14 @@ const Projects = () => {
       id: 2,
       title: "TripCraft",
       description:
-        "A smart web app that creates personalized travel itineraries based on destination, budget, and duration. Built with React, Firebase, and Google Places API, it lets users view day-wise plans, explore places with photos, and save trips via Google login. Features include PDF itinerary download and emailing the plan to the user for easy access.",
+        "Built a web app that generates personalized travel itineraries based on destination, budget, and duration using React, Firebase, and Google Places API. Features include Google login, day-wise plans with photos, and PDF/email itinerary sharing.",
       image: project2,
       link: "https://ai-travel-planner-pi.vercel.app/",
     },
     {
       id:3,
       title: "Weather App",
-      description :"Engineered an interactive Weather Dashboard using ReactJS and the OpenWeather API, delivering real-time weather insights and a 5-day forecast with sleek, dynamic visuals. Enhanced user experience by integrating city search, geolocation-based detection, and condition-based weather icons for clarity. Designed a modern, responsive UI with ReactJS and CSS, transforming complex weather data into an intuitive and visually engaging experience.",
+      description :"Engineered a ReactJS-based weather dashboard using OpenWeather API for real-time updates and 5-day forecasts. Integrated city search, geolocation detection, and condition-based icons within a sleek, responsive UI for an engaging user experience.",
     image: project3,
     link: "https://forecastpage.netlify.app/"
     }

@@ -38,7 +38,7 @@ const Hero = () => {
           transition={{ delay: 1.5, duration: 0.5 }}
           className="text-purple-500 text-3xl"
         >
-          Web Developer
+          Web Developer & Data Enthusiast
         </motion.span>
         <motion.div
           initial={{ opacity: 0, y: 100 }}
@@ -48,18 +48,20 @@ const Hero = () => {
         >
           <p>
             Hi, I’m a B.Tech IT student at Bharati Vidyapeeth University, Pune,
-            passionate about full-stack web development — with a special love for
-            frontend technologies. I enjoy building clean, responsive, and
-            user-friendly interfaces using React.js, Tailwind CSS, and modern
-            UI/UX design practices. While I’ve worked across the stack, what
-            excites me most is bringing ideas to life through intuitive web
-            applications.
+            passionate about building impactful digital experiences through
+            full-stack web development and data-driven insights. I love creating
+            clean, responsive, and user-friendly interfaces using React.js,
+            Tailwind CSS, and modern UI/UX design principles — while also
+            exploring how data can make web applications smarter and more
+            meaningful.
           </p>
           <p className="mt-3">
-            Lately, I’ve been exploring the integration of AI/ML concepts into web apps — combining smart tech with great design to
-            create meaningful user experiences. I’m always eager to learn,
-            experiment, and enhance my skills to develop smarter, future-ready
-            digital solutions.
+            Recently, I’ve been diving deeper into data analytics and machine
+            learning — learning how to integrate intelligent features and data
+            visualization into web apps to deliver more personalized and
+            efficient user experiences. I’m always eager to learn, experiment,
+            and bridge the gap between web development and data science to craft
+            innovative, future-ready solutions.
           </p>
         </motion.div>
       </motion.div>
